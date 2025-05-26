@@ -49,8 +49,7 @@
     const ptex=document.querySelector(".ptext");
     async function callback(cityName)
     {
-      const apiKey = process.env.WEATHER_API_KEY;
-      const response = await fetch(api+cityName+apikey);
+        const response = await fetch(api+cityName+apikey);
         var data = await response.json();
         console.log(data);
         document.querySelector(".city").innerHTML= data.name;
