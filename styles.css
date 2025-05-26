@@ -1,0 +1,101 @@
+* 
+{
+    padding:0;
+    margin: 0;
+    font-style:oblique,sans-serif;  
+}
+body 
+{
+  
+    background: #302d2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card 
+{
+    width:90%;
+    max-width: 450px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ptext {
+    font-size: 40px;
+    margin: 10px;
+}
+.search input
+{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    margin-left:1px;
+    padding: 10px 25px;
+    flex:1;
+    margin-right: 10px;
+    padding : 10px auto;
+    border-radius: 20px;
+    background: #ebfffc;
+    text-align: center;
+    font-size: 26px;
+}
+.search button 
+{   outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 70px;
+    margin-right: -20px;
+    height: 70px;
+}
+.search button  img 
+{
+    width: 43px;
+}
+.icon 
+{
+    width: 46px;
+    margin-top: 30px;
+}
+.temp 
+{
+    font-size: 75px;
+}
+.city 
+{
+    margin-top: 10px;
+    font-size: 25px;
+    font-style:arial; 
+
+}
+.details 
+{   
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+}
+.details p
+{
+    margin: 10px 0 0 -60px;
+}
+.humidity , .wind {
+    margin: -10px 0 0 0;
+}
+.sun {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-top: 10px;
+}
