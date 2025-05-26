@@ -43,13 +43,13 @@
 
 <script>
     const api="http://api.openweathermap.org/data/2.5/weather?q="
-    const apikey="&units=metric&APPID=b27c9bd40893f5a9ef33fbaf8b90db96"
+    const apikey=APIKEY;
     const searchbtn = document.querySelector(".searchbtn");
     const searchElement = document.querySelector(".searchElement");
     const ptex=document.querySelector(".ptext");
     async function callback(cityName)
     {
-      
+      const apiKey = process.env.WEATHER_API_KEY;
       const response = await fetch(api+cityName+apikey);
         var data = await response.json();
         console.log(data);
